@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'minecraft_REGULAR';
-    src: url('MinecraftRegular-Bmg3.otf') format('opentype');
-}
-
-
-body {
-    font-family: 'minecraft_REGULAR';
-}
