@@ -2,8 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #474444;
     display: flex;
+    color: #fff;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -19,7 +20,7 @@ body {
 }
 
 .menu-card {
-    background-color: #ffffff;
+    background-color: #a09a9a;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -45,7 +46,7 @@ body {
 }
 
 .menu-card.inactive {
-    background-color: #d3d3d3;
+    background-color: #3f3f3f;
     color: #888;
     cursor: not-allowed;
 }
@@ -105,7 +106,7 @@ a:hover {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #474444;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -148,7 +149,6 @@ a:hover {
         opacity: 1;
     }
 }
-
 
 .theme-dropdown {
     position: relative;

@@ -17,3 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+function changeTheme() {
+    const themeSelector = document.getElementById("themeSelector");
+    const selectedTheme = themeSelector.value;
+    const themeLink = document.getElementById("theme");
+    themeLink.href = selectedTheme;
+}

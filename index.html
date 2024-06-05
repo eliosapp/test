@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elios </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" id="theme" href="style.css">
 </head>
-
+<button id="open-modal-button"><img src="téléchargé.png" alt="test"></button>
  <!-- MetaData Nat & R�f -->
  <meta charset="utf-8">
  <meta name="google-site-verification" content="NiMI_p--l9IJ7h2ePQBtFTiaRnt6ZnD_T-5VWSWUQa8" />    
@@ -39,13 +39,20 @@
 
  <link rel="icon" type="image/png" href="https://eliosapp.github.io/logo.png">
 
- <button id="open-modal-button">0</button>
+
  
  <div id="modal" class="modal">
     <div class="modal-content">
         <span class="close-button">&times;</span>
-        <h2>Fenêtre modale</h2>
-        <p>Contenu de la fenêtre modale.</p>
+        <h2>Option</h2>
+        <label for="themeSelector">Thème :</label>
+        <select id="themeSelector" onchange="changeTheme()">
+            <option value="style.css">Thème par défaut</option>
+            <option value="dark-theme.css">Thème sombre</option>>
+            <option value="default-theme.css">No css</option>>
+        </select>
+        <h2>Informations</h2>
+        <p>Derniere mise a jour : BETA_0.1.5<br>Ajout de la fenetre des option et informations</p>
     </div>
 </div>
 
@@ -61,6 +68,14 @@
             <h2>Calculatrice</h2>
         </div>
     </div>
+    <section class="vide">
+        <div class="container">
+            <div class="vide-content">
+                <!-- Contenu vide ici -->
+            </div>
+        </div>
+    </section>
+
 
     <script src="script.js"></script>
 </body>
