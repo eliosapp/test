@@ -24,3 +24,10 @@ function changeTheme() {
     const themeLink = document.getElementById("theme");
     themeLink.href = selectedTheme;
 }
+
+function changePolice() {
+    const themeSelector = document.getElementById("policeSelector");
+    const selectedTheme = themeSelector.value;
+    const themeLink = document.getElementById("police");
+    themeLink.href = selectedTheme;
+}
