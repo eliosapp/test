@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur de Retraite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-card active" id="home">
+            <h2>Accueil</h2>
+        </div>
+        <div class="menu-card active" id="services">
+            <h2>Devise de finance</h2>
+        </div>
+        <div class="menu-card inactive" id="about">
+            <h2>Calculatrice</h2>
+        </div>
+    </div>
+
+    <div class="retirement-simulator">
+        
+        <h1>Simulateur de Retraite</h1>
+        <form id="retirement-form">
+            <label for="current-age">Âge actuel :</label>
+            <input type="number" id="current-age" required>
+            
+            <label for="retirement-age">Âge de départ à la retraite :</label>
+            <input type="number" id="retirement-age" required>
+            
+            <label for="current-savings">Épargne actuelle (€) :</label>
+            <input type="number" id="current-savings" required>
+            
+            <label for="annual-savings">Taux d'épargne annuel (€) :</label>
+            <input type="number" id="annual-savings" required>
+            
+            <label for="annual-return">Taux de rendement annuel (%) :</label>
+            <input type="number" id="annual-return" required>
+            
+            <button type="submit">Calculer</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

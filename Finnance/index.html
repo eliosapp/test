@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATOP - Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-card active" id="home">
+            <h2>Accueil</h2>
+        </div>
+        <div class="menu-card active" id="services">
+            <h2>Devise de finance</h2>
+        </div>
+        <div class="menu-card inactive" id="about">
+            <h2>Calculatrice</h2>
+        </div>
+    </div>
+
+    <div class="currency-converter">
+
+        <form id="converter-form">
+            <select id="from-currency"></select>
+            <button id="exchange-button" class="exchange-button">&#8644;</button>
+
+            <select id="to-currency"></select>
+            <input type="number" id="amount" placeholder="Montant">
+            <button type="submit">Convertir</button>
+        </form>
+
+
+
+        <div id="result"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
