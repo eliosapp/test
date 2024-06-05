@@ -136,6 +136,18 @@
     font-family: cursive, sans-serif;
 } 
 
+.optiontrois {
+    font-family: 'Verdana', sans-serif;
+} 
+
+@font-face {
+    font-family: 'minecraft_REGULAR';
+    src: url('MinecraftRegular-Bmg3.otf') format('opentype');
+}
+.optionquatre {
+    font-family: 'minecraft_REGULAR';
+} 
+
 
 /* Theme selector */
 
