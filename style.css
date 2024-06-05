@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -80,5 +79,40 @@ body {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+.loadscreen {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadscreen-content {
+    background-color: #00f7ff;
+    color: #ff0;
+    /*margin: px;*/
+    padding: 2000px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    cursor: wait;
+}
+
+.loadscreen-content h2 {
+    color: #ff0
+}
+
+#load_loadicon-classLOADER {
+    color: rgb(0, 0, 0);
 }
 

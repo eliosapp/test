@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('modal');
     const openModalButton = document.getElementById('open-modal-button');
@@ -24,10 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
-
-
 function changeTheme() {
     const themeSelector = document.getElementById("themeSelector");
     const selectedTheme = themeSelector.value;
@@ -45,16 +42,6 @@ function changePolice() {
     console.log(`[${getCurrentTime()}] Police changé en ${selectedTheme}`)
     setCookie('police', selectedTheme, 365)
 }
-
-
-function getCurrentTime() {
-    const now = new Date();
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
-    return `${hours}:${minutes}:${seconds}`;
-}
-
 
 function getCurrentTime() {
     const now = new Date();
@@ -113,3 +100,25 @@ function loadPreferences() {
         setCookie('police', "arial.css", 365)
     }
 }
+
+
+
+
+
+
+function generateRandomStars() {
+    const starContainer = document.querySelector(".star-container");
+    const numStars = 100;
+  
+    for (let i = 0; i < numStars; i++) {
+        const star = document.createElement("div");
+        star.className = "star";
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.animationDuration = `${1 + Math.random() * 4}s`;
+   
+        starContainer.appendChild(star);
+    }
+  }
+  
+  generateRandomStars();
